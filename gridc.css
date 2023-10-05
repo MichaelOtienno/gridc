@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background-color: hsl(226, 43%, 10%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif, 'Poppins', 'Rubik', sans-serif
+}
+p{
+    color: aliceblue;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    'jer work play study' 
+    'jer exc social self';
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 25px;
+    
+}
+
+.jeremy{
+    background-color:hsl(264, 64%, 52%)  ;
+    grid-area: jer;
+    position: relative;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+.jeremy > h2 {
+    color:hsl(236, 100%, 87%);
+
+}
+.jeremy > p {
+    color:hsl(236, 100%, 87%);
+
+}
+.inner-jer{
+    background-color:  hsl(235, 46%, 20%);
+    border-radius: .4rem;
+    padding: 37px;
+    position: absolute;
+    bottom: 0;
+
+}
+.inner-jer >h2 {
+    color: aliceblue;
+    margin: 1rem 0;
+}
+.jeremy img{
+    border:solid white 2px;
+    border-radius: 130px;
+    margin-bottom: 1.5rem;
+}
+.work{ 
+    background-color: hsl(15, 100%, 70%);
+    grid-area: work;
+}
+.play{background-color: hsl(195, 74%, 62%);
+    grid-area: play;
+}
+.study{background-color:  hsl(348, 100%, 68%);
+    grid-area: study;
+}
+.exercise{background-color: hsl(145, 58%, 55%);
+    grid-area: exc;
+}
+.social{background-color: hsl(264, 64%, 52%);
+    grid-area: social;
+}
+.self{background-color: hsl(43, 84%, 65%);
+    grid-area: self;
+}
+
+
+.work,
+.play,
+.study,
+.exercise,
+.social,
+.self {
+    display: flex;
+    flex-direction: column;
+    border-radius: .6rem;
+    align-items: flex-end;
+    position: relative;
+    
+}
+
+.work img,
+.play img,
+.study img,
+.exercise img,
+.social img,
+.self img {
+    top: 0;
+    right: 0;
+    margin-bottom: -1rem
+}
+
+
+.inner >p {
+    color:hsl(236, 100%, 87%);
+}
+.inner {
+    background-color: hsl(235, 46%, 20%);
+    border-radius: .6rem;
+    padding: 20px;
+}
+
+
+.inner ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    color: aliceblue;
+    font-size: 18px
+}
+
+
+.inner >h2 {
+    color: aliceblue
+}
+
+.inner >h2 {
+    font-size: 24px;
+    margin: 5px 5px;
+    margin-top: 1rem
+}
